@@ -1,0 +1,39 @@
+.funcionamiento {
+	min-height: 100vh;
+	background-color: var(--colorSecundario);
+	padding-bottom: 10rem;
+}
+
+.funcionamiento__wave {
+	margin-top: -100%;
+}
+
+.funcionamiento__heading {
+	font-size: 6rem;
+	font-weight: 900;
+	text-transform: uppercase;
+	text-align: center;
+	color: var(--blanco);
+}
+
+.funcionamiento__grid {
+	padding: 2rem;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	align-items: center;
+	gap: 2rem;
+	color: var(--blanco);
+	text-align: center;
+}
+@media (min-width: 1000px) {
+	.funcionamiento__grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+.funcionamiento__grid img {
+	display: block;
+	width: 100%;
+	height: auto;
+	margin-inline: auto;
+}

@@ -1,0 +1,33 @@
+.banner {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.banner__heading {
+	text-align: center;
+	font-size: 8rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.banner__heading span {
+	display: block;
+	color: var(--colorSecundario);
+	text-align: center;
+}
+
+.banner__botones {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+}
+
+@media (min-width: 768px) {
+	.banner__botones {
+		flex-direction: row;
+	}
+}
