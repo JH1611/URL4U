@@ -111,6 +111,17 @@ ul {
 	}
 }
 
+@keyframes llegarB {
+	from {
+		opacity: 0;
+		transform: translateY(100%);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
 .comed {
 	animation-name: llegarD;
 	animation-duration: 1s;
@@ -118,6 +129,17 @@ ul {
 .comei {
 	animation-name: llegarI;
 	animation-duration: 1s;
+}
+
+@media (min-width: 1000px) {
+	.comed {
+		animation-name: llegarB;
+		animation-duration: 1s;
+	}
+	.comei {
+		animation-name: llegarB;
+		animation-duration: 1s;
+	}
 }
 
 .oculto {
