@@ -27,6 +27,7 @@ body {
 	margin: 0;
 	font-family: var(--fuenteContenido);
 	color: var(--negro);
+	overflow-x: hidden;
 }
 
 p {
@@ -73,4 +74,52 @@ ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
+}
+
+@keyframes entrada {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.fade {
+	animation-name: entrada;
+	animation-duration: 1s;
+}
+
+@keyframes llegarD {
+	from {
+		opacity: 0;
+		transform: translateX(100%);
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+@keyframes llegarI {
+	from {
+		opacity: 0;
+		transform: translateX(-100%);
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+.comed {
+	animation-name: llegarD;
+	animation-duration: 1s;
+}
+.comei {
+	animation-name: llegarI;
+	animation-duration: 1s;
+}
+
+.oculto {
+	opacity: 0;
 }
