@@ -18,12 +18,15 @@
 
 .funcionamiento__grid {
 	padding: 2rem;
+	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
 	align-items: center;
 	gap: 2rem;
 	color: var(--blanco);
 	text-align: center;
+	overflow-x: hidden;
+	overflow-y: hidden;
 }
 @media (min-width: 1000px) {
 	.funcionamiento__grid {

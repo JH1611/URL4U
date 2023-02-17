@@ -48,6 +48,7 @@ const Funcionamiento = () => {
 						src={"/img/paso_1.png"}
 						height={200}
 						width={500}
+						alt="Paso 1"
 					/>
 				</InView>
 				<InView
@@ -60,6 +61,7 @@ const Funcionamiento = () => {
 						src={"/img/paso_2.png"}
 						height={200}
 						width={500}
+						alt="Paso 2"
 					/>
 				</InView>
 				<InView
@@ -72,6 +74,7 @@ const Funcionamiento = () => {
 						src={"/img/paso_3.png"}
 						height={200}
 						width={500}
+						alt="Paso 3"
 					/>
 				</InView>
 			</div>

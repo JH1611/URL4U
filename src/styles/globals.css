@@ -27,7 +27,6 @@ body {
 	margin: 0;
 	font-family: var(--fuenteContenido);
 	color: var(--negro);
-	overflow-x: hidden;
 }
 
 p {
@@ -124,21 +123,25 @@ ul {
 
 .comed {
 	animation-name: llegarD;
-	animation-duration: 1s;
+	animation-duration: 0.5s;
+	transform: translateY(0) translateX(0);
 }
 .comei {
 	animation-name: llegarI;
-	animation-duration: 1s;
+	animation-duration: 0.5s;
+	transform: translateY(0) translateX(0);
 }
 
 @media (min-width: 1000px) {
 	.comed {
 		animation-name: llegarB;
 		animation-duration: 1s;
+		transform: translateY(0) translateX(0);
 	}
 	.comei {
 		animation-name: llegarB;
 		animation-duration: 1s;
+		transform: translateY(0) translateX(0);
 	}
 }
 
